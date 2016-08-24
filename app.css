@@ -1,0 +1,27 @@
+.outer
+{
+    height: auto;
+    background-color: darkolivegreen;
+    color: azure;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.inner
+{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: auto;
+    width: auto;
+    background-color: cornflowerblue;
+    color: azure;
+}
+.scr
+{
+    height: 470px;
+    overflow: scroll;
+}
+tr:hover{
+    background-color: darkolivegreen;
+    color: azure;
+}

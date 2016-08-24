@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="app.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="outer">
+
+    <div class="inner">
+        <div ng-app="myApp">
+            <div ng-controller="MainController" style="visibility: hidden" id="mainDiv">
+                <div class="scr" scroll-directive="loadmore()">
+                    <table cellpadding="3" border="4">
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>details</th>
+                        </tr>
+                        <tr ng-repeat="row in tableData" >
+                            <td>{{row.id == undefined ? 'no id found' : row.id}}</td>
+                            <td>{{row.name == undefined ? 'no event name available' : row.name}}</td>
+                            <td><a href="{{row.url}}">Details of record {{$index+1}}</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
